@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm'; 
 import ContactList from './ContactList';
 import Filter from './Filter';
 import styles from './App.module.css';
+import { nanoid } from 'nanoid';
+
 
 function App() {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState([]); 
   const [filter, setFilter] = useState('');
 
   const handleAddContact = (newContact) => {
