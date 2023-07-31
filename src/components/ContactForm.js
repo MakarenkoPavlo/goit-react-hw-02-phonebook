@@ -15,7 +15,7 @@ function ContactForm({ onAddContact, contacts }) {
       return;
     }
 
-    const newContact = { id: nanoid(), name, number };
+    const newContact = { id: nanoid(), name, number }; 
     onAddContact(newContact);
     setName('');
     setNumber('');
